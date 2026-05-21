@@ -184,14 +184,25 @@ autoskool communities
 autoskool feed <slug> -n 10
 ```
 
-## Public Repo Checklist
+## Setup Help for Non-Technical Users
 
-Before publishing:
+If the setup feels too technical, you can use an AI coding assistant such as Claude Code, Codex, Cursor, Windsurf, or another AI IDE to help you install and run it locally.
 
-- confirm `.env`, auth, state, logs, and browser profiles are ignored
-- add install instructions for npm/global usage
-- add CLI command docs
-- add MCP server docs
-- add dashboard docs once implemented
-- add examples that use fake/demo community data only
-- run tests and review `git status --short`
+A useful prompt:
+
+```text
+Please help me set up this local Node.js CLI project safely. Install dependencies, run the doctor/test commands, start auth login, and do not print or commit any cookies, tokens, .env files, browser profiles, SQLite files, logs, or local state.
+```
+
+Recommended first commands:
+
+```powershell
+npm install
+npm run doctor
+npm start -- login
+npm start -- communities
+```
+
+## Risk Notice
+
+Autoskool CLI is an unofficial local tool and is not affiliated with Skool. Any automation or scraping may carry account, platform, privacy, or terms-of-service risk. Use conservative pacing, review queued drafts manually, and avoid bulk or spam-like actions.
