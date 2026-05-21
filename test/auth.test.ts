@@ -46,7 +46,7 @@ test("auth status reads and clears local session without leaking full token", as
   await saveAuthSession(config, {
     source: "dedicated-browser",
     savedAt: "2026-05-19T00:00:00.000Z",
-    defaultCommunity: "ai-automation-society",
+    defaultCommunity: "demo-community",
     cookies: [
       { name: "auth_token", value: "very-secret-token-value", domain: ".skool.com" },
       { name: "skool_session", value: "session", domain: ".skool.com" },

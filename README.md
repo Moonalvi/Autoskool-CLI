@@ -31,8 +31,8 @@ Human-friendly shortcuts are also available:
 
 ```powershell
 npm start -- communities
-npm start -- feed ai-automation-society -n 10
-npm start -- info ai-automation-society
+npm start -- feed <community-slug> -n 10
+npm start -- info <community-slug>
 npm start -- login
 npm start -- me
 npm start -- q ls
@@ -158,17 +158,6 @@ npm run start -- mcp tools
 npm run start -- mcp status
 npm run start -- dashboard start --port 4320
 ```
-
-## Reference Sources
-
-This project is starting from two local references:
-
-- `C:\Users\Moon Alvi\Desktop\AutoSkool`
-  - current conservative Skool commenting, reply monitoring, dashboard, and auth helper work
-- `C:\Users\Moon Alvi\Desktop\AutoSkool\workspaces\printing-press-library\library\media-and-entertainment\skool`
-  - upstream Go-based `skool-pp-cli` reference for broad Skool data/CLI/MCP coverage
-
-The new repo should not copy private runtime state from either reference.
 
 ## Development
 

@@ -10,7 +10,7 @@ test("post scoring prioritizes zero-comment help posts", () => {
     {
       id: "post-1",
       title: "How do I fix this workflow?",
-      authorName: "Moon",
+      authorName: "Demo Member",
       body: "I am stuck with an automation handoff and need advice on what to check next.",
       commentCount: 0,
       likeCount: 1,
@@ -49,7 +49,7 @@ test("post draft queue item includes source evidence", () => {
     {
       id: "post-1",
       title: "How do I fix this workflow?",
-      authorName: "Moon",
+      authorName: "Demo Member",
       body: "Need help with the exact bottleneck.",
       commentCount: 0,
       likeCount: 0,

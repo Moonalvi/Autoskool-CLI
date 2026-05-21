@@ -35,7 +35,7 @@ test("community feed normalization produces stable items", () => {
             ]),
           },
         },
-        user: { name: "Moon" },
+        user: { name: "Demo Member" },
       },
     ],
     currentGroup: {
@@ -54,7 +54,7 @@ test("community feed normalization produces stable items", () => {
     {
       id: "post-1",
       title: "Hello world",
-      authorName: "Moon",
+      authorName: "Demo Member",
       body: "Body text",
       commentCount: 0,
       likeCount: 12,
@@ -169,7 +169,7 @@ test("community feed can enrich full media details from post pages", async () =>
                     imagePreview: "https://assets.skool.com/f/group/preview.png",
                   },
                 },
-                user: { name: "Moon" },
+                user: { name: "Demo Member" },
               },
             ],
           },
@@ -396,7 +396,7 @@ test("community feed human formatter keeps terminal output organized", () => {
       {
         id: "post-1",
         title: "How do I fix this workflow?",
-        authorName: "Moon",
+        authorName: "Demo Member",
         body: longBody,
         commentCount: 2,
         likeCount: 4,
