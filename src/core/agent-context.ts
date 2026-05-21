@@ -1,0 +1,53 @@
+import { VERSION } from "./version.js";
+
+export function createAgentContext() {
+  return {
+    name: "autoskool-cli",
+    version: VERSION,
+    purpose: "Local-first Skool automation toolkit for human-approved AI workflows.",
+    safety: {
+      outboundActionsRequireApproval: true,
+      agentsCanSendLiveActions: false,
+      defaultPacing: "3-8 minutes between live outbound actions",
+    },
+    commands: [
+      "help",
+      "version",
+      "doctor",
+      "agent-context",
+      "queue list",
+      "queue add-demo",
+      "queue approve",
+      "queue ignore",
+      "auth login",
+      "auth status",
+      "auth logout",
+      "community info",
+      "community feed",
+      "posts opportunities",
+      "posts draft",
+      "posts queue",
+      "replies check",
+      "replies draft",
+      "replies queue",
+      "queue send",
+      "safety status",
+      "safety resume",
+      "mcp tools",
+      "mcp status",
+      "mcp call",
+      "dashboard start",
+    ],
+    plannedCapabilities: [
+      "dedicated browser auth",
+      "HTTP primary Skool reads",
+      "browser fallback for read recovery",
+      "community feed reads",
+      "post opportunity scoring",
+      "reply monitoring",
+      "human approval queue",
+      "MCP server",
+      "local dashboard",
+    ],
+  };
+}

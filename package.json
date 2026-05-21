@@ -1,0 +1,37 @@
+{
+  "name": "autoskool-cli",
+  "version": "0.1.0",
+  "description": "Local-first Skool CLI and operator toolkit for humans and AI agents.",
+  "type": "module",
+  "bin": {
+    "autoskool": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli/index.ts",
+    "doctor": "tsx src/cli/index.ts doctor",
+    "test": "node --import tsx --test test/cli.test.ts test/queue.test.ts test/auth.test.ts test/transport.test.ts test/community.test.ts test/posts.test.ts test/replies.test.ts test/send.test.ts test/mcp.test.ts test/dashboard.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "skool",
+    "cli",
+    "mcp",
+    "automation",
+    "local-first"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "commander": "^14.0.3",
+    "playwright": "^1.60.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.9.0",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}

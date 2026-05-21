@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Local runtime state
+.env
+.env.*
+!.env.example
+state/
+data/
+logs/
+output/
+tmp/
+temp/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Auth/session material
+/\.auth/
+/auth/
+cookies.json
+storage-state.json
+playwright/.auth/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+# Package manager noise
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
