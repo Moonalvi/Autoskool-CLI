@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Local-first Skool CLI and operator toolkit for humans and AI agents.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moonalvi/Autoskool-CLI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moonalvi/Autoskool-CLI/issues"
+  },
+  "homepage": "https://github.com/Moonalvi/Autoskool-CLI#readme",
   "bin": {
     "autoskool": "./dist/cli/index.js"
   },
